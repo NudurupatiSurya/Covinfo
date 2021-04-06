@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Other_Countries">
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_column="0"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="0"
+        android:layout_marginTop="5dp"></TextView>
+    <ScrollView
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Scroll_Singlec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_sc">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Total Cases"
+                android:textSize="25dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textColor="#2C3335"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/totalcases_sc"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:gravity="center_horizontal"
+                android:text="4819277"
+                android:textColor="#E8290B"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Total Deaths"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:textColor="#2C3335"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="316,961"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:textColor="#8395A7"
+                android:textStyle="bold"
+                android:id="@+id/totaldeaths_sc"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="Total Recovered"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:textColor="#2C3335"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="1,864,269"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:textColor="#45CE30"
+                android:textStyle="bold"
+                android:id="@+id/totalrecovered_sc"></TextView>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar_sc"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:text="Data Visualization"
+        android:id="@+id/dataviz2"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corners_oc"
+        android:layout_marginBottom="4dp"></Button>
+</GridLayout>
